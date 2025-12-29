@@ -1,5 +1,5 @@
 {% set name = "stacie" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/stacie-{{ version }}.tar.gz
-  sha256: a00933223e0401ed5082486b1210dd02a327dd768e7b7674c79546d5835de5fa
+  sha256: 837af0b077771d0c64837dec7a961677cc239cf8b88ef902e42b36df578247b9
 
 build:
   noarch: python
@@ -22,8 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - attrs >=24.1.0
-    - cattrs >=24.1.0
+    - attrs >=23.1.0
     - matplotlib-base >=3.9.0
     - numpy >=2.0.0
     - scipy >=1.13.0
