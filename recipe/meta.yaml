@@ -1,13 +1,13 @@
 {% set name = "stacie" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/stacie-{{ version }}.tar.gz
-  sha256: 837af0b077771d0c64837dec7a961677cc239cf8b88ef902e42b36df578247b9
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/stacie-{{ version }}.tar.gz
+  sha256: 6c823b1d41543d993f75a6ee1b34562a3598eb74317ef6815b22d18d139afbf0
 
 build:
   noarch: python
