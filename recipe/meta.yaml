@@ -17,8 +17,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=65.0
-    - setuptools-scm >=7.1.0
+    - setuptools >=77.0
+    - setuptools-scm >=8.1
     - pip
   run:
     - python >={{ python_min }}
@@ -55,9 +55,9 @@ about:
     time-correlated data, as well as analyzing characteristic timescales.
   doc_url: https://molmod.github.io/stacie/
   dev_url: https://github.com/molmod/stacie/
-  license: LGPL-3.0-only
+  license: LGPL-3.0-or-later
   license_file:
-    - LICENSE-LGPL-3.0-or-later.txt
+    - LICENSE
 
 extra:
   recipe-maintainers:
