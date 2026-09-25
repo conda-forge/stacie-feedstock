@@ -1,13 +1,13 @@
 {% set name = "stacie" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/stacie-{{ version }}.tar.gz
-  sha256: 837af0b077771d0c64837dec7a961677cc239cf8b88ef902e42b36df578247b9
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/stacie-{{ version }}.tar.gz
+  sha256: 6c823b1d41543d993f75a6ee1b34562a3598eb74317ef6815b22d18d139afbf0
 
 build:
   noarch: python
@@ -17,8 +17,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=65.0
-    - setuptools-scm >=7.1.0
+    - setuptools >=77.0
+    - setuptools-scm >=8.1
     - pip
   run:
     - python >={{ python_min }}
@@ -55,9 +55,9 @@ about:
     time-correlated data, as well as analyzing characteristic timescales.
   doc_url: https://molmod.github.io/stacie/
   dev_url: https://github.com/molmod/stacie/
-  license: LGPL-3.0-only
+  license: LGPL-3.0-or-later
   license_file:
-    - LICENSE-LGPL-3.0-or-later.txt
+    - LICENSE
 
 extra:
   recipe-maintainers:
