@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stacie-feedstoc
 
 Home: https://molmod.github.io/stacie/
 
-Package license: LGPL-3.0-only
+Package license: LGPL-3.0-or-later
 
 Summary: STable AutoCorrelation Integral Estimator (STACIE)
 
