@@ -1,5 +1,5 @@
 {% set name = "stacie" %}
-{% set version = "1.2.2" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/stacie-{{ version }}.tar.gz
-  sha256: 6c823b1d41543d993f75a6ee1b34562a3598eb74317ef6815b22d18d139afbf0
+  sha256: 22f9cd8a4fa4e171136b48400697e7e9d9edcb122006ed6bc368bb66caddfab6
 
 build:
   noarch: python
